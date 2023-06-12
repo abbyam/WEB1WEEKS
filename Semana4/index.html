@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 4</title>
+  </head>
+  <body>
+    <!--Ejemplo de Hipervinculos Ancla-->
+    <nav>
+      <ul>
+        <li><a href="#hipervinculos">Ir a Hipervinculos</a></li>
+        <li><a href="#ordenadas">Ir a Listas Ordenadas</a></li>
+        <li><a href="#desordenadas">Ir a Listas Desordenadas</a></li>
+      </ul>
+    </nav>
+
+    <h1>Listas</h1>
+    <!--Ambos tipos de listas sirven para hacer menús-->
+
+    <!--Este es el ancla "ordenadas" en este caso, que usaremos para el 
+    el el hipervinculo ancla-->
+    <a href="ordenadas"></a>
+    <h2>Listas Ordenadas</h2>
+    <!--Son las que tienen una enumeración ya se númerica,alfanumerica
+    u otros,usamos la siguiente etiqueta-->
+    <ol>
+      <!--ol Para hacer la lista-->
+      <li>Negro</li>
+      <!-- li Para añadir elementos-->
+      <li>Verde</li>
+      <li>Blanco</li>
+      <li>Rojo</li>
+    </ol>
+
+    <ol type="A">
+      <!--Con type elijo el tipo de numeración que usaré, en este 
+        caso será con letras en mayúscula-->
+      <!-- En los types tenemos númerica,alfanúmerica y romano-->
+      <li>Tiki</li>
+      <li>Duke</li>
+      <li>Capi</li>
+    </ol>
+
+    <a name="desordenadas"></a>
+    <h2>Listas Desordenadas</h2>
+    <!--No hay un orden lógico de los elementos, solo elementos, se usa 
+    la etiqueta ul como etiqueta madre -->
+    <ul type="square">
+      <!--En los types tenemos opciones de formas para las viñetas, 
+      ejemplo:disc,square,circle-->
+      <li>Manzana</li>
+      <li>Pera</li>
+      <li>Mango</li>
+    </ul>
+
+    <h2>Listas de Definición</h2>
+    <!--Permite crear un orden entre un término y su concepto
+    usa le etiqueta dl y adentro una etiqueta dt (Tiltulo)
+   y dd(definición)-->
+    <dl>
+      <dt>UTN</dt>
+      <dd>Universidad Técnica Nacional</dd>
+      <dt>INA</dt>
+      <dd>Instituto Nacional de Aprendizaje</dd>
+    </dl>
+
+    <!--NOTA: También puedo mezclar los tipos de listas-->
+
+    <h2>Ejemplo de uan mezcla de listas</h2>
+    <ol>
+      <li>
+        Peliculas de Acción
+        <ul>
+          <li>Rambo</li>
+          <li>Rápidos y Furioso</li>
+        </ul>
+      </li>
+      <li>
+        Peliculas de Comedia
+        <ul>
+          <li>Jack and Jill</li>
+          <li>Una esposa de mentiras</li>
+        </ul>
+      </li>
+      <li>
+        Peliculas de Epoca
+        <ul>
+          <li>Orgullo y Prejuicio</li>
+          <li>Emma</li>
+        </ul>
+      </li>
+    </ol>
+    <a name="hipervinculos"></a>
+    <h2>Hipervinculos</h2>
+    <!--Hipervinculos. Hay tres tipos:
+        Interno(dentro de mi website)Externo(Fuera de)y Anclas(cuando
+        lleva a una X sección de esa misma página)-->
+
+    <!--Con esto identifico el ancla, en este caso 
+        Hiperviculos de mi página-->
+
+    <h2>Interno</h2>
+    <a href="contactenos.html">Contáctenos</a>
+    <h2>Externo</h2>
+    <a href="https://www.ferrari.com/es-ES">Ir a la página de Ferrari</a><br 
+    <a href=""
+      ><img
+        src="https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/Ferrari-Monza_SP2-2019-1600-01.jpg?crop=1xw:1.0xh;center,top&resize=1200:*"
+        alt="Imagen de Ferrari"
+        width="100px"
+        height="100xp"
+    /></a>
+
+    <h2>Ancla</h2>
+
+    <!--Los enlaces a videos se agregan con la etiqueta video,
+    para cuando el video esta dentro de mi carpeta-->
+    <h2>Video</h2>
+    <video width="250px" height="250px" src=""></video>
+<!--Con la etiqueta iframe hago el enlace a videos externos,este código
+es un copy paste de Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0tm2OZj0Uug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Tablas</h1>
+    <!--Usa filas y columnas(celdas), se inicia con las filas.tr es para filas
+    y td para columnas-->
+    <table border="2" width="300px">
+      <caption>Tabla Regular</caption>
+      <tr>
+        <th>Columna  1</th>
+        <th>Columna 2</th>
+      </tr>
+      <tr>
+        <td>R1</td>
+        <td>R2</td>
+      </tr>
+
+      <tr>
+        <td>C1</td>
+        <td>C2</td>
+      </tr>
+        <td>A2</td>
+        <td>A2</td>
+       <tr>
+
+       </tr>
+      
+
+    </table>
+
+    <table bgcolor="blue" border="2" width="300px">
+      <caption>Tabla Irregular</caption>
+      
+      <tr bgcolor="red">
+        <td colspan="3">Alfa</td>
+        <td>Bravo</td>
+        <td rowspan="2">Charlie</td>
+      </tr>
+
+      <tr>
+        <td>Delta</td>
+        <td>Echo</td>
+        <td>Foxtrot</td>
+        <td>Golf</td>
+      </tr>
+
+      <tr>
+        <td>Hotel</td>
+        <td align="center" colspan="3" rowspan="2">India</td>
+        <td bgcolor="yellow">Juliet</td>
+      </tr>
+
+      <tr>
+        <td>Kilo</td>
+        <td>Lima</td>
+      </tr>
+
+      <tr>
+        <td>Mike</td>
+        <td>November</td>
+        <td>Oscar</td>
+        <td>Papa</td>
+        <td>Quebec</td>
+      </tr>
+    </table>
+  </body>
+</html>
