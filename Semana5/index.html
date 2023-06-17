@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <!-- Los formularios se crean por medio de la etiqueta form-->
+    <!-- Los formularios tiene el método Get envia información a traves de la URL,
+    el Post lo envía a través del aplicativo, esto es por seguridad, el post es más seguro-->
+    <h4>Ejemplo con get</h4>
+    <form action=" " method="get">
+      <input type="text" name="name" />
+      <input type="submit" value="Aceptar" />
+    </form>
+    <br />
+    <br />
+    <br />
+    <h4>Ejemplo con post</h4>
+    <form action=" " method="post">
+      <input type="text" name="name" />
+      <input type="submit" value="Aceptar" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <form action="" method="get" id="prueba">
+      <label for="">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Escriba su nombre"
+        maxlength="15"
+        minlength="15"
+      />
+      <input type="submit" value="Aceptar" />
+      <br />
+      <br />
+      <br />
+      <label for="">Apellidos</label>
+      <input
+        type="text"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Escriba su nombre"
+        maxlength="15"
+        minlength="15"
+        readonly
+      />
+
+      <input type="submit" value="Aceptar" />
+      <br />
+      <br />
+      <br />
+      <!--Input específico para contraseña-->
+      <label for="Este es el label para">Contraseña</label>
+      <input type="password" />
+      <input type="submit" value="Aceptar" />
+
+      <br />
+      <br />
+      <br />
+      <label for="">Edad</label>
+      <input type="number" id="Numero" min="1" max="20" />
+      <br />
+      <br />
+      <br />
+
+      <label for="">Correo</label>
+      <input type="email" id="Correo" />
+      <br />
+      <br />
+      <br />
+      <label for="">Seleccione un color</label>
+      <input type="color" id="color" />
+
+      <br />
+      <br />
+      <br />
+      <label for="">Archivo</label>
+      <input type="file" id="Archivo" />
+      <br />
+      <br />
+      <br />
+      <label for="Para seleccionar género">Seleccione su género</label>
+      <br />
+      <br />
+
+      <label for="">Masculino</label>
+      <input type="radio" name="Genero" value="M" />
+      <br />
+      <label for="">Femenino</label>
+      <input type="radio" name="Genero" value="F" />
+      <br />
+      <label for="">Otro</label>
+      <input type="radio" name="Genero" value="O" />
+      <!--Todos deben de tener el mismo name pero con diferente
+    value,eso hace sean dependientes uno del otro pero tengan
+    su propia identidad.O sea como todos estan en genero, si elijo Femenino
+    y luego Masculino,se cambia el punto del radio, si tuvieran name distinto
+    se seleccionarian los dos-->
+      <br />
+      <br />
+      <br />
+
+      <label for="Para seleccionar género">Seleccione el color</label>
+      <br />
+      <br />
+
+      <label for="">Rojo</label>
+      <input type="checkbox" name="Colores" value="1" />
+      <br />
+      <label for="">Negro</label>
+      <input type="checkbox" name="Colores" value="2" />
+      <br />
+      <label for="">Verde</label>
+      <input type="checkbox" name="Colores" value="3" />
+      <br />
+      <label for="">Celeste</label>
+      <input type="checkbox" name="Colores" value="4" checked />
+      <!--Con checkbox si seleecion o varios a la vez aunque estén
+       bajo el mismo name. El atributo checked hace que ya este seleccionado 
+       de antemano al cargar la página-->
+      <br />
+      <br />
+      <br />
+      <label for="">Seleccione una fecha</label>
+      <input type="date" name="fecha" />
+      <br />
+      <br />
+      <br />
+      <label for="">Seleccione una hora</label>
+      <input type="time" name="time" />
+      <br />
+      <br />
+      <br />
+      <label for="">Seleccione un mes</label>
+      <input type="month" name="meses" />
+      <br />
+      <br />
+      <br />
+      <label for="">Seleccione una semana</label>
+      <input type="week" name="semana" />
+      <br />
+      <br />
+      <br />
+      <label for="">Escriba una dirección URL</label>
+      <input type="url" name="URL" />
+      <!--Este válida se ponga una dirección URL -->
+      <br />
+      <br />
+      <br />
+      <label for="">Agregue un comentario</label>
+      <textarea name="areadetexto" cols="20" rows="10"></textarea>
+      <br />
+      <br />
+      <br />
+    </form>
+
+    <label for="">Escoja una marca de vehículos</label>
+    <select id="" form="prueba">
+      <option value="1">Honda</option>
+      <option value="2">Toyota</option>
+      <option value="3">Nissan</option>
+      <input type="submit" value="Aceptar" />
+      <input type="reset" value="Resetear" />
+      <!--Este es un combobox-->
+      <!--Esto de los vehículos esta fuera del form, pero
+        el form tiene el id prueba y acá le estamos indicando 
+    que el pertenece a ese mismo form aunque este fuera-->
+    </select>
+  </body>
+</html>

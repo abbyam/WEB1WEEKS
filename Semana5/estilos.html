@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <!--Externo-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Ejemplo de CSS Internos, siempre va en la parte del head,
+        esto hace que solo se apliquen a estan página,no a páginas asociadas por ejemplo-->
+    <style>
+      h4 {
+        background-color: blueviolet;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Título de Página</h4>
+    <!-- Hay tres tipos de CSS: 
+    En línea: Se aplican directamente a las etiquetas mediante la propiedad style.
+    Intrrnos
+    Externos-->
+
+    <!--Ejemplo de Interno-->
+    <p
+      style="
+        background-color: aqua;
+        border: 3px dotted red;
+        display: block;
+        width: 15%;
+      "
+    >
+      Hola Mundo
+    </p>
+    <p style="background-color: aqua; border: 1px dotted red; display: block">
+      Hola Mundo2
+    </p>
+
+    <!--Nota en CSS, una regla esta comppuesta por un selector(elmento del html al que le aplicare la rrgla),lo que contiene es el cuerpo
+    eje: Selector{
+                 propiedad:valor;
+                                    }-->
+    <!--Hay 4 tipos de selectores:
+    * le aplica a todo
+    etiqueta:eje p, le agrega las propiedades a todas las p de HTML
+    . es para agragar formato a clases: .cajon, le agrega las propiedades a los elemntos de la clase cajon
+    # significa id(ejemplo:#tabla1), es para aplicarle la regla a algo que es demasiado específico,no es una buena práctica por que 
+    no se puede reutilizarc más ese id.
+    Esto se llama especificidad, lo ideal es ser menos específico-->
+  </body>
+</html>
