@@ -1,0 +1,61 @@
+body{
+    background-color:#A3E4D7 ;
+}
+
+section{
+    text-align: center;
+}
+
+.formulario{
+   padding:12rem;
+   background: url(https://terraturcr.com/wp-content/uploads/2017/02/Rio-CEleste.jpg) no-repeat;
+   background-size: cover;
+}
+
+.puntosform{
+    font-style: oblique;
+}
+.puntosform input{
+   background-color:#FFFFFF;
+   padding:15px;
+   border:none;
+   border-radius: 5rem;
+ 
+}
+
+.puntosform label{
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+.puntomen{
+    font-style: oblique;
+    
+}
+.puntomen textarea{
+    background-color:#FFFFFF;
+    padding: 30px;
+    border:none;
+    border-radius:2rem;
+    height: 8rem;
+}
+
+.puntomen label{
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+.botonsubmit input{
+    margin-top: 5rem;
+    padding:0rem;
+    align-content: center;
+}
+
+.boton{
+    padding: 10rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70px;
+    border: none;
+    border-radius: 5rem;
+}
