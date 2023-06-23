@@ -59,3 +59,24 @@ section{
     border: none;
     border-radius: 5rem;
 }
+
+/*Acá empieza el CSS del Login*/
+
+.loginbody{
+    background-image: linear-gradient(to bottom right,#DAA520, #0033CC, #FF77CC, rgb(255, 122, 89));
+    background-position:center;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    margin-bottom: 50%;
+
+}
+
+.login{
+    align-content: center;
+    width: 40%;
+    height: 90%;
+    background:url(https://guidedtours.one/pic/tours/112/61349344e8f48_Costa_Rica_Beach_Vacation_Package__Playa_Carrillo_Orange_Sunsets_.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
