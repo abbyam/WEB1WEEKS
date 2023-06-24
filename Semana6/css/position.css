@@ -1,0 +1,41 @@
+.div1,.div2,.div3,.div4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000000,
+}
+
+.div1{
+background-color: cadetblue;
+}
+
+/*Existen dos tipos de posicionamiento, uno es relative,
+luego de eso sep one hacia que lado lo quiero mover,eje top, NOTA: SI LO QUIERO
+MOVER PARA LA DERECHA PONGO LEFT(PARA QUE EMPUJE DESDE AHÍ)si lo quiero mover para la izquierda pongo right
+El objeto se mueve a partir de la posición donde esta */
+.div2{
+background-color: blueviolet;
+position: relative;
+top: 50px;
+left: 500px;
+}
+
+/*Ejemplo de posicionamiento absoluto, el objeto se mueve a partir de la esquina superior izquierda
+de la pantalla.*/
+.div3{
+background-color: darkorange;
+position: absolute;
+top: 150px;
+left: 50px;
+}
+
+/*También se mueve a partir de la esquina superior izquierda,este tipo de objeto con posicionamiento fijo
+no se mueve au que se mueva el mouse*/
+.div4{
+background-color: greenyellow;
+position: fixed;
+top: 300px;
+}
+
+/* Con el atributo !important,anulamos una regla que le caiga encima a la que creamos, eje: top: 150px !important;*/
+
+

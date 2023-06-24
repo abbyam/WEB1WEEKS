@@ -1,0 +1,42 @@
+*{
+    background-color: beige;
+    margin: 0%;
+}
+/* Comentar en CSS*/
+
+
+
+/* Agrupamiento en CSS*/
+.div1,.div2,.div3,.div4{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #006400;
+    margin-bottom: 20px;
+}
+.div3{
+    background-color: blue;
+    width: 100%;
+}
+
+.div4{
+    background-color: darkorange; 
+    width: 100%;
+}
+.div1,.div2{
+    display: inline-block;
+    text-align: center;/* Alinear solamente el texto, no el objeto que lo contiene*/
+}
+
+.div1{
+    background-color: cyan;
+    border-radius: 50%;
+    width: 15%;
+    background-image: url('../img/Tiki.jpeg');
+    background-size:cover;
+    
+}
+
+.div2{
+    background-color:crimson;
+     width:84%;
+}
