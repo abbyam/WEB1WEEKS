@@ -1,0 +1,64 @@
+body{
+    background-color:#7C7B7A ;
+}
+
+.nav1,.nav3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav1{
+    background-color: white;
+    height: 50px;
+
+}
+
+.nav2{
+    background-color: aqua;
+    width: 250px;
+    height: 200px;
+    float: right;
+    margin-right: 10px;
+}
+
+.nav3{
+    background-color: white;
+    float: left;
+    width: 1000px;
+    height: 500px;
+    background-image: url('../images//ho6.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav4{
+    background-color:white;
+    float: left;
+    width: 1000px;
+    height: 400px;
+    margin-left: 10px;
+    /*margin-top: 500px;
+    margin-left: 10px;
+    margin-right: 400px;*/
+}
+
+.nav5{
+    background-color:crimson;
+     float: left;
+    width: 1000px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.pc2{
+    text-decoration: underline;
+}
+
+.pc5{
+    text-align: center;
+}
+
+.subtis{
+  margin-inline: 10px;
+}
