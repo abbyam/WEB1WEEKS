@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Rectangular con Materialize y Bootstrap</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Enlaza las hojas de estilo de Materialize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Enlaza las hojas de estilo de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Enlaza las hojas de estilo de Materialize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-6 mx-auto">
+          <!-- Primera mitad de la página con Materialize -->
+          <div class="formulario form-container card bg-white p-4">
+            <label for="signin-input"><h4>Sign in</h4></label>
+            <label for=""
+              ><h6>
+                Lorem ipsum dolor sit amet elit. Sapiente sit aut eos
+                consectetur adipisicing
+              </h6></label
+            >
+            <div class="input"></div>
+            <form class="campoentrada">
+              <div class="input-field mb-3 username">
+                <label for="username">Username</label>
+                <input type="text" id="username" aria-describedby="emailHelp" />
+              </div>
+
+              <div class="input-field mb-3">
+                <label for="password" class="password">Password</label>
+                <input type="password" id="password" />
+              </div>
+
+              <div class="mb-3 form-check">
+                <label class="remember-forgot-container">
+                  <input
+                    type="checkbox"
+                    class="checkbox-bluelight filled-in"
+                    checked=""
+                  />
+                  <span class="remember-text">Remember</span>
+                  <a href=""
+                    ><span class="forgot-text">Forgot Password</span></a
+                  >
+                </label>
+              </div>
+
+              <a
+                class="waves-effect blue darken-2 text-white btn text-center mb-2"
+              >
+                Log in
+              </a>
+              <br />
+              <h6 class="grey-text center mb-3">-or-</h6>
+              <!-- Login with Facebook button using Materialize -->
+              <a
+                class="waves-effect blue darken-4 text-white btn text-center mb-2"
+              >
+                <i class="material-icons center">facebook</i>
+                Login with Facebook
+              </a>
+
+              <!-- Login with Twitter button using Font Awesome -->
+              <a
+                class="waves-effect btn btn-primary text-white text-center mb-2"
+              >
+                <i class="fab fa-twitter"></i>
+                Login with Twitter
+              </a>
+
+              <!-- Login with Google button using Font Awesome -->
+              <a
+                href="#"
+                class="waves-effect btn btn-danger text-white text-center mb-2"
+              >
+                <i class="fab fa-google"></i> Login with Google
+              </a>
+            </form>
+          </div>
+        </div>
+        <!-- Fin de la primera mitad del formulario -->
+
+        <div class="col-md-6">
+          <!-- Segunda mitad de la página con Bootstrap -->
+
+          <!-- Fin de la segunda mitad del formulario con Bootstrap -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6"></div>
+        <img src="IMG/persona.jpg" class="persona" />
+      </div>
+    </div>
+
+    <!-- Scripts de Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Scripts de Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
