@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 2</title>
+  </head>
+  <body>
+    <div>
+      <div id="titulo">JAVASCRIPT</div>
+      <button onclick="cambiarColor()">Cambia color</button>
+    </div>
+    <div>
+      <div class="titulo2">JAVASCRIPT</div>
+      <button onclick="cambiarColor1()">Cambia color1</button>
+    </div>
+    <div>
+      <div class="titulo3">JAVASCRIPT</div>
+      <button onclick="cambiarColor2()">Cambia color2</button>
+    </div>
+    <form onsubmit="return validar()" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" />
+      <label for="Telefono">Telefono:</label>
+      <input type="text" name="" id="nombre" />
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" />
+      <input type="submit" value="Presionar" />
+    </form>
+    <!-- // el form guarda o envia todo lo que este dentro del formulario -->
+    <!-- <form onsubmit="accion()" method="get">
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor">
+        <input type="submit" value="Presionar">
+        
+
+    </form> -->
+    <!-- // solo hace una accion  -->
+    <button onclick="enviarMensaje('Hola mundo parametros','numero')">
+      Mensaje
+    </button>
+    <button value="5" id="5">5</button>
+    <script src="js/index.js"></script>
+  </body>
+</html>
