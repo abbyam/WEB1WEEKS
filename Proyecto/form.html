@@ -8,87 +8,95 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/styles/estilos.css" />
+    <link rel="stylesheet" href="css/css.css" />
   </head>
   <body>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <form>
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Ingrese su nombre"
-              />
-            </div>
-            <div class="form-group">
-              <label for="correo">Correo</label>
-              <input
-                type="email"
-                class="form-control"
-                id="correo"
-                placeholder="Ingrese su correo"
-              />
-            </div>
-            <div class="form-group">
-              <label for="telefono">Teléfono</label>
-              <input
-                type="tel"
-                class="form-control"
-                id="telefono"
-                placeholder="Ingrese su teléfono"
-              />
-            </div>
-            <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                class="form-control"
-                id="mensaje"
-                rows="5"
-                placeholder="Escriba su mensaje aquí"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="statickNavBar container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../Proyecto/img/log2.png" alt="Amigostrip" width="280px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <p style="color: white; font-weight: bold">
+          Hola. Agradecemos tu interés en nuetros servicios, para Amigo Trip
+          será un placer ayudarte a pleanear tus vacaciones en Costa Rica,
+          esperamos que crees recuerdos maravillosos en este bello país.
+        </p>
+      </div>
+    </nav>
+    <div>
+      <div
+        class="container mt-5"
+        style="
+          background-color: #98fb98;
+          padding: 60px;
+          max-width: 550px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 20px;
+        "
+      >
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form>
+              <div class="form-group">
+                <label for="nombre ">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  placeholder="Ingrese su correo"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="Ingrese su teléfono"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  rows="5"
+                  placeholder="Escriba su mensaje aquí"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container mt-5">
-      <fieldset>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="../Proyecto/img/lds3.jpg"
-                class="card-img-top"
-                alt="Imagen 1"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="../Proyecto/img/lds4.jpg"
-                class="card-img-top"
-                alt="Imagen 2"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="../Proyecto/img/lds2.jpg"
-                class="card-img-top"
-                alt="Imagen 3"
-              />
-            </div>
-          </div>
-        </div>
-      </fieldset>
+    <div class="row derechosAutor p-4">
+      <div class="col text-light">
+        <p>©2023 Todos los Derechos Reservados | <b>AmigosTrip</b></p>
+      </div>
+      <div class="col d-flex justify-content-end"></div>
     </div>
 
     <!--JQuery-->

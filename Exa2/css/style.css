@@ -1,0 +1,16 @@
+body{
+    background-color:brown;
+}
+
+.container{
+    background-color: aqua;
+    width: 800px;
+    justify-content: center;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top:50px;
+    padding: 100px;
+}
+.display{
+    background-color: black;
+}
