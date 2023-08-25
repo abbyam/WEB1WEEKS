@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amigos trip</title>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleForRegister.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="statickNavBar container-fluid">
+        <a class="" href="../html/index.html"
+          ><img
+            src="../img/logoAmigosTripPng.png"
+            alt="Amigostrip"
+            width="280px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="flex-grow-1 navbar-nav">
+            <a
+              class="nav_Textdecoration text-light nav-link active"
+              aria-current="page"
+              href="../html/sobrenosotros.html"
+              >Acerca de nosotros</a
+            >
+            <a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="../html/form.html"
+              target="_blank"
+              >Contactenos</a
+            >
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/blog.html"
+                    >Visitar los blogs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/hacerBlog.html"
+                    >Crear un blog</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ¿Que ofresemos? <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/Playas.html"
+                    >Visita playas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/hospedaje.html"
+                    >Hospedaje</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="../html/servicios.html"
+                    >Visita volcanes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/actividades.html"
+                    >Actividades</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Más <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/visitarCostaRica.html"
+                    >¿Por que visitar Costa Rica?</a
+                  >
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/visitarCostaRica.html#mapa"
+                      >Ver mapa</a
+                    >
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/transporte.html"
+                    >Transporte</a
+                  >
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/transporte.html#transportes"
+                    >
+                      Transporte privado
+                    </a>
+                  </ul>
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/transporte.html#choferes"
+                    >
+                      Choferes
+                    </a>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <br />
+          </div>
+          <div class="navbar-nav">
+            <a href="../html/Login.html" class="login">
+              <button class="inicioSesion btn btn-primary fs-4 m-1 p-3">
+                Iniciar Sesión
+              </button></a
+            >
+            <a href="../html/registro.html">
+              <button class="Registro btn btn-primary fs-4 m-1 p-3">
+                Registrar
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="contenedorofcarrousel container my-4">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="../html/blog.html">
+              <img
+                src="../img/blog.png"
+                class="addfilter w-100 img-fluid"
+                alt="visita nuestro blog"
+            /></a>
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Visita nuestro blog</h5>
+              <p class="text-sm">
+                ¿Quieres saber que opinan las personas? Presiona aquí.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="../html/actividades.html"
+              ><img
+                src="../img/diversin.jpg"
+                class="addfilter w-100 img-fluid"
+                alt="Diversion"
+            /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Muchas cosas que hacer en Costa Rica</h5>
+              <p class="text-sm">
+                Haz cosas como Canopy, Puentes colgantes, Caminatas por el
+                Parque Nacional Volcan Arenal y más.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img
+                src="../img/playasdeocostarica.jpg"
+                class="addfilter w-100 img-fluid"
+                alt="Visita nuestras playas"
+            /></a>
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Visita nuestras hermosas playas</h5>
+              <p class="text-sm">
+                Muchas playas por visitar y disfrutar, puedes tomarte excelentes
+                fotos y disfrutar de un gran paisaje.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row my-5">
+        <div class="fath_why col-xl-12 col-sm-12 col-md-12">
+          <div class="why_information">
+            <h1>¿Por que visitar Costa Rica?</h1>
+          </div>
+          <div class="row">
+            <div class="col-6 parrafo_Inform">
+              <p class="fs-3 text-start p-3 m-1">
+                Visita Costa Rica por sus impresionantes paisajes naturales, que
+                incluyen playas vírgenes, exuberantes selvas tropicales y
+                volcanes majestuosos.
+              </p>
+              <a href="../html/visitarCostaRica.html">
+                <button type="button" class="buttom btn z-index">
+                  Conoce algunos otros aspectos
+                </button></a
+              >
+            </div>
+            <div class="col-6">
+              <img
+                class="img"
+                src="../img/PersonaEncostaRica.png"
+                width="290px"
+                height="280px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="backround__cards row my-5">
+        <div
+          class="backround__individual_card col mx-2 card border-0"
+          style="width: 18rem"
+        >
+          <img
+            src="../img/floraDeCostaRica.webp"
+            class="m-2 rounded card-img-top"
+            alt="floraDeCostaRica"
+          />
+          <div class="card-body">
+            <h5 class="fw-bolder card-title">Flora</h5>
+            <p class="card-text fs-4">
+              La flora de Costa Rica es asombrosamente diversa y vibrante,
+              reflejando la rica variedad de climas y ecosistemas presentes en
+              el país.
+            </p>
+            <a
+              href="https://www.ongvoluntariado.org/flora-de-costa-rica-voluntariado-en-costa-rica/"
+              target="_blank"
+              class="button_Color btn"
+              >Ver más sobre la flora de Costa Rica</a
+            >
+          </div>
+        </div>
+        <div
+          class="backround__individual_card col mx-2 card border-0"
+          style="width: 18rem"
+        >
+          <img
+            src="../img/faunaDeCostaRica.jpg"
+            class="m-2 rounded card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="fw-bolder card-title">Fauna</h5>
+            <p class="card-text fs-4">
+              La fauna de Costa Rica es igualmente fascinante y variada,
+              destacándose como un verdadero paraíso para los amantes de la
+              biodiversidad.
+            </p>
+            <a
+              href="https://viajesporcostarica.com/datos-utiles/fauna/"
+              target="_blank"
+              class="button_Color btn"
+              >Ver más sobre la fauna de Costa Rica</a
+            >
+          </div>
+        </div>
+        <div
+          class="backround__individual_card col mx-2 card border-0"
+          style="width: 18rem"
+        >
+          <img
+            src="../img/LugaresDeCostaRica.jpg"
+            class="m-2 rounded card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="fw-bolder card-title">Lugares</h5>
+            <p class="card-text fs-4">
+              Costa Rica ofrece una paleta de destinos turísticos deslumbrantes
+              que cautivan a los visitantes de todo el mundo.
+            </p>
+            <a
+              href="https://www.skyscanner.es/noticias/los-10-lugares-mas-espectaculares-de-costa-rica"
+              target="_blank"
+              class="button_Color btn"
+              >Ver más sobre los lugares de Costa Rica</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="wavesCss">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#58a52c"
+              fill-opacity="1"
+              d="M0,256L12.6,234.7C25.3,213,51,171,76,138.7C101.1,107,126,85,152,96C176.8,107,202,149,227,192C252.6,235,278,277,303,245.3C328.4,213,354,107,379,58.7C404.2,11,429,21,455,69.3C480,117,505,203,531,202.7C555.8,203,581,117,606,112C631.6,107,657,181,682,218.7C707.4,256,733,256,758,245.3C783.2,235,808,213,834,224C858.9,235,884,277,909,288C934.7,299,960,277,985,240C1010.5,203,1036,149,1061,128C1086.3,107,1112,117,1137,112C1162.1,107,1187,85,1213,85.3C1237.9,85,1263,107,1288,128C1313.7,149,1339,171,1364,165.3C1389.5,160,1415,128,1427,112L1440,96L1440,0L1427.4,0C1414.7,0,1389,0,1364,0C1338.9,0,1314,0,1288,0C1263.2,0,1238,0,1213,0C1187.4,0,1162,0,1137,0C1111.6,0,1086,0,1061,0C1035.8,0,1011,0,985,0C960,0,935,0,909,0C884.2,0,859,0,834,0C808.4,0,783,0,758,0C732.6,0,707,0,682,0C656.8,0,632,0,606,0C581.1,0,556,0,531,0C505.3,0,480,0,455,0C429.5,0,404,0,379,0C353.7,0,328,0,303,0C277.9,0,253,0,227,0C202.1,0,177,0,152,0C126.3,0,101,0,76,0C50.5,0,25,0,13,0L0,0Z"
+            ></path>
+          </svg>
+          <div class="wavestitle">
+            <h1 class="text-center my-4"><b>Actividades destacadas</b></h1>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <a class="aWithoutDecoration" onclick="showMessageOrigina()"
+              ><h1 class="text-center">
+                Conoce mucho acerca de las actividades de Costa Rica
+              </h1></a
+            >
+          </div>
+          <div class="row">
+            <h2 class="text-center" id="titleParrafo"></h2>
+            <p class="text-center my-5" id="miParrafo">
+              Explora un mundo de maravillas en Costa Rica, donde las selvas
+              tropicales cobran vida con el zumbido de la biodiversidad y las
+              playas de ensueño te llaman con sus aguas cristalinas. Desde
+              emocionantes eco-aventuras en la selva hasta momentos de
+              relajación en aguas termales naturales, Costa Rica te invita a
+              vivir experiencias únicas. Avista monos curiosos, descubre la
+              majestuosidad de los volcanes y sumérgete en las cálidas aguas del
+              océano para explorar el vibrante mundo submarino.
+            </p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <h1 class="text-center">
+              Presiona una de las imagenes para conocer sobre algunas de las
+              actividades que puedes hacer en Costa Rica
+            </h1>
+          </div>
+          <div class="row">
+            <div class="outsideOfdespliegue">
+              <section class="img_cr_despliegue">
+                <img
+                  onclick="showMessage()"
+                  src="../img/RelajaciónAguasTermalesSpas Naturales.jpg"
+                  alt="agustermales"
+                />
+                <img
+                  onclick="showMessages()"
+                  src="../img/avistamiento.jpeg"
+                  alt="avistamientoEnCostaRica"
+                />
+                <img
+                  onclick="showMessagess()"
+                  src="../img/DeportesdeMontaña.jpg"
+                  alt="Deportes de Montaña"
+                />
+              </section>
+            </div>
+            <a href="../html/actividades.html" class=""
+              ><button class="buttons btn">Ver más</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer p-5">
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <h2><b>Más información sobre nosotros.</b></h2>
+            <p class="ancho fs-5 ext-light-emphasis">
+              Nuestro objetivo como empresa es brindarte la mejor experiencia
+              para que puedas escoger tu lugar de pase en nuestro hermoso país
+              Costa Rica
+            </p>
+          </div>
+          <div>
+            <h3>Escribemos por medio de Email</h3>
+            <form action="" class="ancho">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="formatog form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="formatog form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Comentario"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button class="button_Color2 fs-5">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-4 p-2 fs-5">
+          <div class="">
+            <h3><b>Redes sociales</b></h3>
+          </div>
+          <div class="row my-4">
+            <div class="col-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-facebook"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                ></path>
+              </svg>
+            </div>
+            <div class="col">Siguenos en Facebook</div>
+          </div>
+          <div class="row my-4">
+            <div class="col-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-instagram"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                ></path>
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                <path d="M16.5 7.5l0 .01"></path>
+              </svg>
+            </div>
+            <div class="col">Siguenos en Instagram</div>
+          </div>
+          <div class="row my-4">
+            <div class="col-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-tiktok"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"
+                ></path>
+              </svg>
+            </div>
+            <div class="col">Siguenos en TikTok</div>
+          </div>
+        </div>
+        <div class="col-4 p-2">
+          <h3><b>Informacion de Contacto</b></h3>
+          <div class="row">
+            <div class="col-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-home"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+              </svg>
+            </div>
+            <div class="col">
+              <p>
+                Costa Rica, <br />
+                Cartago centro
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-mail"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                  ></path>
+                  <path d="M3 7l9 6l9 -6"></path>
+                </svg>
+              </div>
+              <div class="col">
+                <p>Amigostrip@or.cr</p>
+              </div>
+              <h3><b>Comentarios</b></h3>
+              <p>
+                Tus comentarios son importantes para seguir mejorando nuestra
+                calidad de servicios y nuestra web oficial
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="row derechosAutor p-4">
+      <div class="col text-light">
+        <p>©2023 Todos los Derechos Reservados | <b>AmigosTrip</b></p>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <p>
+          <a href="" class="linksDecoration">Informacion Compañia</a> |
+          <a href="" class="linksDecoration">Privacion y Politica</a> |
+          <a href="" class="linksDecoration">Terminos y condiciones</a>
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>

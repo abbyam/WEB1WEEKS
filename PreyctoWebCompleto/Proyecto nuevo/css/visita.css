@@ -1,0 +1,79 @@
+.contenedors {
+  width: 560px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  margin: 10px;
+  height: 500px;
+}
+.contenedor1 {
+  width: 200px;
+  position: relative;
+  bottom: 100px;
+  right: -170px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0px 0px 34px -7px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 34px -7px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 0px 34px -7px rgba(0, 0, 0, 0.43);
+  border-radius: 30px;
+}
+.titulo {
+  color: #fff;
+  bottom: 120px;
+  text-align: center;
+}
+
+.parrafo {
+  position: relative;
+  bottom: 80px;
+  padding: 20px;
+}
+
+.imagenFormato,
+.imagenFormato2,
+.imagenFormato3 {
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  width: 500px;
+  height: 200px;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.imagenFormato:hover,
+.imagenFormato2:hover,
+.imagenFormato3:hover {
+  box-shadow: 1px 1px 5px #58a52c;
+  transform: scale(1.1);
+}
+
+.imagenFormato {
+  background-size: cover;
+  background-image: url(../img/puravida.png);
+}
+.imagenFormato2 {
+  background-size: cover;
+  background-image: url(../img/cafeu2_1600x900-1.webp);
+}
+
+.imagenFormato3 {
+  background-size: cover;
+  background-image: url(../img/maravilla.jpg);
+}
+
+.boton {
+  border: 1px solid #58a52c;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  margin: 10px;
+  background-color: #fff;
+}
+.boton:hover {
+  background-color: #58a52c;
+}
+.getAhover {
+  transition: transform 0.3s ease;
+}
+.getAhover:hover {
+  transform: translateY(-10px);
+}

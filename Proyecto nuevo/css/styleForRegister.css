@@ -1,0 +1,37 @@
+.botonGeneral {
+  background-color: #58a52c;
+  border: #fff;
+  padding: 10px;
+  margin-top: 5px;
+  transition: transform 0.3s ease;
+}
+
+.botonGeneral:hover {
+  transform: translateX(10px);
+  background-color: #355522;
+}
+.socialNet {
+  color: #58a52c;
+}
+li {
+  list-style: none;
+}
+.contenedor {
+  padding: 10px;
+  border: 0.1px solid #58a52c;
+  width: 300px;
+  border-radius: 5px;
+}
+.backToHome {
+  padding: 10px;
+}
+
+.enlace2 {
+  font-size: 5px;
+  color: #58a52c;
+}
+
+.enlace2:hover {
+  font-size: 5px;
+  color: #426d29;
+}

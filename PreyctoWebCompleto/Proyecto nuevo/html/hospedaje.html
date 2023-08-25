@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospedajes</title>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleForRegister.css" />
+    <link rel="stylesheet" href="../css/hospedajeStyles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="statickNavBar container-fluid">
+        <a class="" href="../html/index.html"
+          ><img
+            src="../img/logoAmigosTripPng.png"
+            alt="Amigostrip"
+            width="280px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="flex-grow-1 navbar-nav">
+            <a
+              class="nav_Textdecoration text-light nav-link active"
+              aria-current="page"
+              href="../html/sobrenosotros.html"
+              >Acerca de nosotros</a
+            >
+            <a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="../html/form.html"
+              target="_blank"
+              >Contactenos</a
+            >
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/blog.html"
+                    >Visitar los blogs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/hacerBlog.html"
+                    >Crear un blog</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ¿Que ofresemos? <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/Playas.html"
+                    >Visita playas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/hospedaje.html"
+                    >Hospedaje</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="../html/servicios.html"
+                    >Visita volcanes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/actividades.html"
+                    >Actividades</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Más <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/visitarCostaRica.html"
+                    >¿Por que visitar Costa Rica?</a
+                  >
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/visitarCostaRica.html#mapa"
+                      >Ver mapa</a
+                    >
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/transporte.html"
+                    >Transporte</a
+                  >
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/transporte.html#transportes"
+                    >
+                      Transporte privado
+                    </a>
+                  </ul>
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/transporte.html#choferes"
+                    >
+                      Choferes
+                    </a>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <br />
+          </div>
+          <div class="navbar-nav">
+            <a href="../html/Login.html" class="login">
+              <button class="inicioSesion btn btn-primary fs-4 m-1 p-3">
+                Iniciar Sesión
+              </button></a
+            >
+            <a href="../html/registro.html">
+              <button class="Registro btn btn-primary fs-4 m-1 p-3">
+                Registrar
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-4"><h1>Listado de Hospedajes</h1></div>
+        <div class="col">
+          <button
+            type="button"
+            class="btnVer btn"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="AmigosTrip esta afiliado a hospedajes, ¡Si eliges a uno de ellos recibiras un descuento!"
+          >
+            Información
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3"></div>
+      <div class="accordion" id="hospedajesAccordion">
+        <div class="card">
+          <div class="card-header" id="afiliadosHeading">
+            <h2 class="mb-0">
+              <button
+                class="botonCallapse mx-2 btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#afiliadosCollapse"
+                aria-expanded="true"
+                aria-controls="afiliadosCollapse"
+              >
+                Hospedajes Afiliados<i class="mx-2 bi bi-border-width"></i>
+              </button>
+            </h2>
+          </div>
+
+          <div
+            id="afiliadosCollapse"
+            class="collapse show"
+            aria-labelledby="afiliadosHeading"
+            data-parent="#hospedajesAccordion"
+          >
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/planeta.png"
+                      class="card-img-top"
+                      alt="Hospedaje 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Planeta Sano Eco Lodge</h5>
+                      <p class="card-text">Localización: Manuel Antonio</p>
+                      <p class="card-text">
+                        Precio: $61 por noche <b class="descuento">(-20%)</b>
+                      </p>
+                      <p class="card-text">
+                        Las habitaciones están equipadas con armario, ropa de
+                        cama y patio con vistas al jardín.
+                      </p>
+                      <a href="https://n9.cl/koqwg" target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/catappa.png"
+                      class="card-img-top"
+                      alt="Hospedaje 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hotel Catappa</h5>
+                      <p class="card-text">Localización: Jacó</p>
+                      <p class="card-text">
+                        Precio: $55 por noche <b class="descuento">(-10%)</b>
+                      </p>
+                      <p class="card-text">
+                        Todas las habitaciones incluyen patio. Todas las
+                        habitaciones disponen de baño privado con artículos de
+                        aseo ...
+                      </p>
+                      <a
+                        href="https://www.booking.com/searchresults.es-mx.html?aid=2210273&label=cHOHQcDll~LDYqsbJ9DHNUOdB0A_ckp5-PaH0EwkKMeWGmlq3SeiIcA%3D%3D&no_rooms=1&srpvid=bd4039b8522f018c&highlighted_hotels=10241817&checkin=2023-09-01&redirected=1&city=-1107579&hlrd=with_dates&group_adults=2&source=hotel&group_children=0&checkout=2023-09-02&keep_landing=1&sid=1ec380e749cf54c3829fd6162a096490#hotelTmpl"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/loft.png"
+                      class="card-img-top"
+                      alt="Hospedaje 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pacifico Loft Hotel</h5>
+                      <p class="card-text">Localización: Jacó</p>
+                      <p class="card-text">
+                        Precio: $71 por noche <b class="descuento">(-13%)</b>
+                      </p>
+                      <p class="card-text">
+                        Las habitaciones incluyen cafetera. Las habitaciones
+                        incluyen baño privado con ducha...
+                      </p>
+                      <a
+                        href="https://www.booking.com/searchresults.es-mx.html?aid=2210273&label=cHOHQcDll~LDYqsbJ9DHNUOdB0A_ckp5-PaH0EwkKMeWGmlq3SeiIcA%3D%3D&no_rooms=1&srpvid=bd4039b8522f018c&highlighted_hotels=1779063&checkin=2023-09-01&redirected=1&city=-1107579&hlrd=with_dates&group_adults=2&source=hotel&group_children=0&checkout=2023-09-02&keep_landing=1&sid=1ec380e749cf54c3829fd6162a096490#hotelTmpl"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/perlanegra.png"
+                      class="card-img-top"
+                      alt="Hospedaje 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Perla Negra Beachfront</h5>
+                      <p class="card-text">
+                        Localización: Puerto Viejo de Talamanca
+                      </p>
+                      <p class="card-text">
+                        Precio: $59 por noche <b class="descuento">(-11%)</b>
+                      </p>
+                      <p class="card-text">
+                        <b class="text-success">Desayuno incluido</b>. El Perla
+                        Negra Beachfront se encuentra en Puerto Vie...
+                      </p>
+                      <a
+                        href="https://www.booking.com/searchresults.es-mx.html?aid=2210273&label=cHOHQcDll~LDYqsbJ9DHNUOdB0A_ckp5-PaH0EwkKMeWGmlq3SeiIcA%3D%3D&no_rooms=1&srpvid=efda3aa3689606bd&highlighted_hotels=8428060&checkin=2023-09-01&redirected=1&city=-1108716&hlrd=with_dates&group_adults=2&source=hotel&group_children=0&checkout=2023-09-02&keep_landing=1&sid=1ec380e749cf54c3829fd6162a096490#hotelTmpl"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/torresdemar.png"
+                      class="card-img-top"
+                      alt="Hospedaje 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hotel Torres del Mar</h5>
+                      <p class="card-text">
+                        Localización: Puerto Viejo, talamanca,
+                      </p>
+                      <p class="card-text">
+                        Precio: $109 por noche <b class="descuento">(-15%)</b>
+                      </p>
+                      <p class="card-text">
+                        <b class="text-success">Desayuno incluido</b>. Todas las
+                        habitaciones están equipadas con escritorio. Todas las
+                        habitacio...
+                      </p>
+                      <a
+                        href="https://www.booking.com/searchresults.es-mx.html?aid=2210273&label=cHOHQcDll~LDYqsbJ9DHNUOdB0A_ckp5-PaH0EwkKMeWGmlq3SeiIcA%3D%3D&no_rooms=1&srpvid=efda3aa3689606bd&highlighted_hotels=6757269&checkin=2023-09-01&redirected=1&city=-1108716&hlrd=with_dates&group_adults=2&source=hotel&group_children=0&checkout=2023-09-02&keep_landing=1&sid=1ec380e749cf54c3829fd6162a096490#hotelTmpl"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="noAfiliadosHeading">
+            <h2 class="mb-0">
+              <button
+                class="botonCallapse mx-2 btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#noAfiliadosCollapse"
+                aria-expanded="false"
+                aria-controls="noAfiliadosCollapse"
+              >
+                Hospedajes No Afiliados<i class="mx-2 bi bi-border-width"></i>
+              </button>
+            </h2>
+          </div>
+          <div
+            id="noAfiliadosCollapse"
+            class="collapse"
+            aria-labelledby="noAfiliadosHeading"
+            data-parent="#hospedajesAccordion"
+          >
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/monteverdeEcolodge.png"
+                      class="card-img-top"
+                      alt="Hospedaje 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Monteverde Ecolodge</h5>
+                      <p class="card-text">Localización: Monteverde</p>
+                      <p class="card-text">Precio: $59 por noche</p>
+                      <p class="card-text">
+                        Tendras tintoreria, consigna de equipaje y una
+                        lavanderia a tu disposición.
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Monteverde-Ecolodge,Monteverde-c46223-h2400892-details/2023-09-01/2023-09-02/2adults?psid=fFBkAk9keR#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/sanjosebarcelo.png"
+                      class="card-img-top"
+                      alt="Hospedaje 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Barceló San José</h5>
+                      <p class="card-text">Localización: San José</p>
+                      <p class="card-text">Precio: $97 por noche</p>
+                      <p class="card-text">
+                        Descripción: Hermoso lugar con excelente servicio, bien
+                        valorado entre los usuarios..
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Barcelo-San-Jose,San-Jose-c30707-h140003-details/2023-09-01/2023-09-02/2adults?psid=fFBkAk9keR#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/pocoapoco.png"
+                      class="card-img-top"
+                      alt="Hospedaje 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hotel & Spa Poco a Poco</h5>
+                      <p class="card-text">Localización: Monteverde</p>
+                      <p class="card-text">Precio: $154 por noche</p>
+                      <p class="card-text">
+                        Tendrás atención multilingüe, consigna de equipaje y una
+                        lavandería a tu disposic…
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Hotel--Spa-Poco-a-Poco,Monteverde-c46223-h170629-details/2023-09-01/2023-09-02/2adults?psid=fFBkAk9keR#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/casona.png"
+                      class="card-img-top"
+                      alt="Hospedaje 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Casona Rústica & Bungalow</h5>
+                      <p class="card-text">Localización: La Fortuna</p>
+                      <p class="card-text">Precio: $54 por noche</p>
+                      <p class="card-text">
+                        Esta posada de 3 estrellas ofrece habitaciones con aire
+                        acond…
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Casona-Rustica--Bungalow,La-Fortuna-c52553-h7133469-details/2023-09-01/2023-09-02/2adults?psid=fFBkAk9keR#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/forest.png"
+                      class="card-img-top"
+                      alt="Hospedaje 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Forest Garden House</h5>
+                      <p class="card-text">Localización: Monteverde</p>
+                      <p class="card-text">Precio: $115 por noche</p>
+                      <p class="card-text">
+                        Se encuentra a 6,2 km del Sky Adventures Monteverde y
+                        ofrece jardín y apa...
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Forest-Garden-House,Monteverde-c46223-h2632829-details/2023-09-01/2023-09-02/2adults?psid=fFBkAk9keR#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/tournon.png"
+                      class="card-img-top"
+                      alt="Hospedaje 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hotel Villa Tournon</h5>
+                      <p class="card-text">Localización: San José</p>
+                      <p class="card-text">Precio: $58 por noche</p>
+                      <p class="card-text">
+                        Si decides alojarte en Hotel Villa Tournon, disfrutarás
+                        de una fantástica ubicación...
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Hotel-Villa-Tournon,San-Jose-c30707-h25774-details/2023-09-01/2023-09-02/2adults?psid=fHCEHehv3x#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img
+                      src="../img/paradise.png"
+                      class="card-img-top"
+                      alt="Hospedaje 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hotel Mountain Paradise</h5>
+                      <p class="card-text">Localización: La Fortuna</p>
+                      <p class="card-text">Precio: $126 por noche</p>
+                      <p class="card-text">
+                        Tendrás un centro de negocios, tintorería y atención
+                        multilingüe a tu…
+                      </p>
+                      <a
+                        href="https://www.es.kayak.com/hotels/Hotel-Mountain-Paradise,La-Fortuna-c52553-h353716-details/2023-09-01/2023-09-02/2adults?psid=fHCEHehv3x#overview"
+                        target="_blank"
+                        ><button class="btnVer btn">Elegir</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row derechosAutor p-4">
+      <div class="col text-light">
+        <p>©2023 Todos los Derechos Reservados | <b>AmigosTrip</b></p>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <p>
+          <a href="" class="linksDecoration">Informacion Compañia</a> |
+          <a href="" class="linksDecoration">Privacion y Politica</a> |
+          <a href="" class="linksDecoration">Terminos y condiciones</a>
+        </p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/hospedaje.js"></script>
+  </body>
+</html>

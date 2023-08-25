@@ -1,0 +1,79 @@
+html {
+  font-family: "Poppins";
+}
+
+.navegador {
+  height: 100px;
+}
+.imgFilter {
+  filter: brightness(70%);
+  object-fit: cover;
+}
+.color {
+  background-color: #59a52c;
+  transition: transform 0.23s ease;
+  width: 200px;
+  border-radius: 12px;
+}
+.color2 {
+  background-color: #fff;
+  color: #59a52c;
+  border: 1px solid #59a52c;
+  transition: transform 0.23s ease;
+  width: 200px;
+  border-radius: 12px;
+}
+.color2:hover {
+  background-color: #59a52c;
+  color: #fff;
+  transform: scale(1.1);
+}
+.link {
+  color: black;
+}
+.link:hover {
+  color: #59a52c;
+}
+
+.color:hover {
+  background-color: #477c28;
+  transform: scale(1.1);
+}
+
+::selection {
+  background-color: #59a52c;
+}
+.derechosAutor {
+  background-color: #498128;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.links {
+  color: white;
+}
+.links:hover {
+  color: #413ed6;
+}
+
+.backToHome {
+  position: relative;
+  top: 40px;
+}
+.enlace,
+.aOfSocialMedia {
+  color: #59a52c;
+}
+
+.enlace:hover,
+.aOfSocialMedia:hover {
+  color: #355c22;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}

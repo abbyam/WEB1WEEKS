@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/blogStyle.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="statickNavBar container-fluid">
+        <a class="" href="../html/index.html"
+          ><img
+            src="../img/logoAmigosTripPng.png"
+            alt="Amigostrip"
+            width="280px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="flex-grow-1 navbar-nav">
+            <a
+              class="nav_Textdecoration text-light nav-link active"
+              aria-current="page"
+              href="../html/sobrenosotros.html"
+              >Acerca de nosotros</a
+            >
+            <a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="../html/form.html"
+              target="_blank"
+              >Contactenos</a
+            >
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/blog.html"
+                    >Visitar los blogs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/hacerBlog.html"
+                    >Crear un blog</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ¿Que ofresemos? <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/Playas.html"
+                    >Visita playas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/hospedaje.html"
+                    >Hospedaje</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="../html/servicios.html"
+                    >Visita volcanes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/actividades.html"
+                    >Actividades</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav_Textdecoration text-light nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Más <i class="bi bi-caret-down-fill"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/visitarCostaRica.html"
+                    >¿Por que visitar Costa Rica?</a
+                  >
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/visitarCostaRica.html#mapa"
+                      >Ver mapa</a
+                    >
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/transporte.html"
+                    >Transporte</a
+                  >
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/transporte.html#transportes"
+                    >
+                      Transporte privado
+                    </a>
+                  </ul>
+                  <ul>
+                    <a
+                      class="dropdown-item"
+                      href="../html/transporte.html#choferes"
+                    >
+                      Choferes
+                    </a>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <br />
+          </div>
+          <div class="navbar-nav">
+            <a href="../html/Login.html" class="login">
+              <button class="inicioSesion btn btn-primary fs-4 m-1 p-3">
+                Iniciar Sesión
+              </button></a
+            >
+            <a href="../html/registro.html">
+              <button class="Registro btn btn-primary fs-4 m-1 p-3">
+                Registrar
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="title"><b>Blogs</b></h1>
+      <p class="text-center">
+        Aqui podras ver blogs hechos por nuestros usuarios visitando diferentes
+        lugares de Costa Rica con el fin de brindar su experiencia al resto de
+        usuarios. Con eso, a lo mejor tu tambien te aventuras en una travesia
+        para compartir tu propio Blog viajando por Costa Rica.
+      </p>
+      <div class="row p-5">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="box col-md-4">
+                <a href=""
+                  ><img src="../img/volcanPoas2.jpg" class="imagen" alt="playa"
+                /></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="aboutLugar card-title">
+                    <i class="bi bi-geo-alt-fill"></i> Lugar
+                  </h5>
+                  <p class="card-text fs-4">
+                    Hoy visite el Volcán Poás, fue una experiencia demasiado
+                    bella, espero tener la oportunidad de visitarlo nuevamente.
+                  </p>
+                  <p class="card-text fs-5">
+                    <small class="text-body-secondary">Hace 1 dia(s)</small
+                    ><br />
+                    <small
+                      >Subido por
+                      <a href="" class="updated"
+                        ><b>Diana Madrigal</b></a
+                      ></small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="box col-md-4">
+                <a href=""
+                  ><img src="../img/rioceleste2.jpg" class="imagen" alt="playa"
+                /></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="aboutActivities card-title">
+                    <i class="bi bi-suit-diamond-fill"></i> Actividad
+                  </h5>
+                  <p class="card-text fs-4">
+                    Hice el cenderismo en Rio celeste, es el paisaje mas hermoso
+                    que vi jamas, lo visitaria muchas veces mas si pudiera.
+                  </p>
+                  <p class="card-text fs-5">
+                    <small class="text-body-secondary">Hace 3 semana(s)</small
+                    ><br />
+                    <small
+                      >Subido por
+                      <a href="" class="updated"
+                        ><b>Melanius Rodriguez</b></a
+                      ></small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="box col-md-4">
+                <a href=""
+                  ><img
+                    src="../img/HotelSavegre.jpg"
+                    class="imagen"
+                    alt="playa"
+                /></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="aboutHotel card-title">
+                    <i class="bi bi-house-heart"></i> Hotel
+                  </h5>
+                  <p class="card-text fs-4">
+                    Este hotel me ah encatado en su totalidad, me sentia en mi
+                    casa, demasiado calido y acogedor.
+                  </p>
+                  <p class="card-text fs-5">
+                    <small class="text-body-secondary">Hace 2 dia(s)</small
+                    ><br />
+                    <small
+                      >Subido por
+                      <a href="" class="updated"
+                        ><b>Mario Barrantes</b></a
+                      ></small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="box col-md-4">
+                <a href=""
+                  ><img
+                    src="../img/Isla-Tortuga-Mauricio-Díaz.jpg"
+                    class="imagen"
+                    alt="playa"
+                /></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="aboutBeach card-title">
+                    <i class="bi bi-sun"></i> Playa
+                  </h5>
+                  <p class="card-text fs-4">
+                    Una hermosa playa, cualquiera quiere venir a un lugar como
+                    estos, tan hermosos y calidos. Flotar en estas aguas te da
+                    la sensacion de libertad absoluta.
+                  </p>
+                  <p class="card-text fs-5">
+                    <small class="text-body-secondary">Hace 2 semana(s)</small
+                    ><br />
+                    <small
+                      >Subido por
+                      <a href="" class="updated"
+                        ><b>Bryan Matarrita</b></a
+                      ></small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="../html/blog.html">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="../html/blog.html">1</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link disabled" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-flex justify-content-center align-items-center my-5">
+        <div class="">
+          <h1 class="title">¿Quieres compartir tu experiencia con nosotros?</h1>
+          <p>
+            Solamente dale clic
+            <a href="../html/hacerBlog.html" class="here">aqui</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row derechosAutor p-4">
+      <div class="col text-light">
+        <p>©2023 Todos los Derechos Reservados | <b>AmigosTrip</b></p>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <p>
+          <a href="" class="linksDecoration">Informacion Compañia</a> |
+          <a href="" class="linksDecoration">Privacion y Politica</a> |
+          <a href="" class="linksDecoration">Terminos y condiciones</a>
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

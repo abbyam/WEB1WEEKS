@@ -1,0 +1,363 @@
+body {
+  z-index: -3;
+  font-family: "Poppins";
+  font-size: 23px;
+}
+
+.statickNavBar {
+  background-color: #58a52c;
+  color: white;
+}
+.nav_Textdecoration {
+  position: relative;
+  cursor: pointer;
+}
+.nav_Textdecoration::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 1px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  border-radius: 20px;
+  transition: transform 0.19s ease-out;
+}
+
+.nav_Textdecoration:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav_Textdecoration .addfilter {
+  filter: brightness(70%);
+}
+
+.inicioSesion {
+  background-color: white;
+  border: 2px solid white;
+  color: #58a52c;
+  transition: transform 0.22s ease;
+}
+.inicioSesion:hover {
+  background-color: #58a52c;
+  border: 2px solid white;
+  transform: scaleY(1.1);
+}
+
+.Registro {
+  background-color: gray;
+  border: 2px solid gray;
+  color: white;
+  transition: transform 0.22s ease;
+}
+
+.Registro:hover {
+  background-color: white;
+  border: 2px solid #59a52c;
+  color: gray;
+  transform: scaleY(1.1);
+}
+
+.listaslink:hover {
+  border-bottom: 2px solid #07c796;
+}
+.button_Color {
+  background-color: #59a52c;
+  font-size: 20px;
+  color: aliceblue;
+  border: #59a52c;
+  transition: transform 0.4s ease-in-out;
+}
+.button_Color:hover {
+  background-color: #59a52c;
+  border: #05dfa8;
+  transform: scale(1.1);
+  color: aliceblue;
+}
+
+.filter {
+  filter: contrast(120%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img_cr_despliegue {
+  padding: 30px;
+  margin-top: 2em;
+  display: flex;
+  width: 1000px;
+  height: 430px;
+}
+
+.img_cr_despliegue img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.img_cr_despliegue img:hover {
+  cursor: crosshair;
+  width: 200px;
+  opacity: 1;
+  filter: contrast(150%);
+}
+
+.outsideOfdespliegue {
+  display: flex;
+  justify-content: center;
+}
+
+::selection {
+  background-color: #58a52cef;
+  color: aliceblue;
+}
+
+.backround__cards {
+  background-image: url(../img/topography.svg);
+  padding: 2vh;
+  border: 20%;
+}
+
+.backround__individual_card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 1vh;
+}
+
+.fath_why {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/costaricapaisaje.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fath_why::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.57);
+}
+
+.why_information {
+  position: absolute;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 1.4vh;
+  border-radius: 50px 20px;
+  border: 5px double rgba(0, 0, 0, 0.5);
+  top: -28px;
+  transition: transform 0.4s ease;
+}
+
+.why_information:hover {
+  transform: rotate(3deg);
+}
+
+.parrafo_Inform {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50px;
+  top: 50px;
+  width: 50%;
+  height: 80%;
+  left: 10px;
+}
+.img {
+  position: absolute;
+  right: 20px;
+  transition: transform 0.33s ease;
+}
+.img:hover {
+  transform: scale(1.4);
+}
+.why_information::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url(../img/topography.svg);
+  border-radius: 50px 20px;
+  z-index: -1;
+}
+
+.buttom {
+  background-color: #59a52c;
+  font-size: 20px;
+  color: aliceblue;
+  border: #59a52c;
+  transition: transform 0.4s ease-in-out;
+  position: absolute;
+  top: 180px;
+  left: 30px;
+}
+.buttom:hover {
+  background-color: #59a52c;
+  border: #59a52c;
+  transform: scale(1.1);
+  color: aliceblue;
+}
+
+.wavesCss {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wavestitle {
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 34px -7px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 34px -7px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 0px 34px -7px rgba(0, 0, 0, 0.43);
+}
+
+.aWithoutDecoration {
+  text-decoration: none;
+  color: black;
+}
+
+.aWithoutDecoration:hover {
+  color: #58a52c;
+  cursor: pointer;
+}
+.footer {
+  position: relative;
+  color: white;
+  background-color: #58a52c;
+}
+
+.ancho {
+  width: 60%;
+}
+
+.formatog {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  margin: 4px;
+}
+
+.formatog:focus {
+  background-color: transparent;
+  transform: scaleY(1.2);
+  border: 1px double white;
+  box-shadow: none;
+  color: white;
+}
+.formatog:focus::selection {
+  background-color: white;
+  color: #58a52c;
+}
+
+.formatog::placeholder {
+  color: #58a52c;
+}
+
+.button_Color2 {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+
+.linksDecoration {
+  text-decoration: none;
+  color: white;
+}
+
+.linksDecoration:hover {
+  color: steelblue;
+}
+.contenedorIndice {
+  border: 1px solid #58a52c;
+  padding: 20px;
+  border-radius: 20px;
+}
+.linkIndice {
+  color: #58a52c;
+}
+.linkIndice:hover {
+  color: #295c0c;
+}
+ul {
+  list-style: square;
+  color: #58a52c;
+}
+
+.imagenFormatoDeVista,
+.imagenFormatoDeVista2,
+.imagenFormatoDeVista3,
+.imagenFormatoDeVista4 {
+  padding: 40px;
+  width: 1200px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.imagenFormatoDeVista {
+  background-image: url(../img/cuerda-tirolina.jpg);
+}
+.imagenFormatoDeVista2 {
+  background-image: url(../img/pacuare.jpg);
+}
+.imagenFormatoDeVista3 {
+  background-image: url(../img/ballena-costa-rica.jpg);
+}
+.imagenFormatoDeVista4 {
+  background-image: url(../img/Jardines-de-orquideas2.jpg);
+}
+
+.derechosAutor {
+  background-color: #498128;
+  color: white;
+}
+.login {
+  text-decoration: none;
+  color: #59a52c;
+}
+.login:hover {
+  color: #fff;
+}
+.buttons {
+  color: #fff;
+  background-color: #59a52c;
+}
+.buttons:hover {
+  color: #59a52c;
+  background-color: #fff;
+  border: 0.3px solid #59a52c;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+.containerOfVideo {
+  border: 2px solid #58a52c;
+  height: 319px;
+  box-shadow: 1px 0px 10px #58a52c;
+}
